@@ -1,13 +1,9 @@
 package application;
 
-import application.entities.Department;
-import application.entities.HourContract;
-import application.entities.Worker;
-import application.entities.enums.WorkerLevel;
+import application.entities.Account;
+import application.entities.SavingsAccount;
 
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -17,44 +13,16 @@ public class Program {
 
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
-        String format = "dd/MM/yyyy";
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat(format);
 
-        System.out.print("Enter department name: ");
-        String departmentName = sc.nextLine();
-        System.out.println("Enter worker data: ");
-        System.out.print("Name: ");
-        String workerName = sc.nextLine();
-        System.out.print("Level: ");
-        String level = sc.nextLine();
-        System.out.print("Base salary: ");
-        Double baseSalary = sc.nextDouble();
+        Account x = new SavingsAccount(1000, "Maria", 1000.0, 0.01);
+        Account y = new Account(1001, "Alex", 1000.0);
 
-        Department department = new Department(departmentName);
-        Worker worker = new Worker(workerName, WorkerLevel.valueOf(level), baseSalary, department);
+        x.withdraw(50.0);
+        y.withdraw(50.0);
 
-        System.out.print("How many contracts to this worker?");
-        Integer n = sc.nextInt();
 
-        for (int i = 1; i <= n; i++) {
-            System.out.println("Enter contract #" + i + " data: ");
-            System.out.print("Date: ");
-            Date contractDate = simpleDateFormat.parse(sc.next());
-            System.out.print("Value per hour: ");
-            Double valuePerHour = sc.nextDouble();
-            System.out.print("Duration: ");
-            Integer hours = sc.nextInt();
-            HourContract contract = new HourContract(contractDate, valuePerHour, hours);
-            worker.addContract(contract);
-        }
-
-        System.out.println("Enter year and month to calculate income (MM/YYYY): ");
-        String date = sc.next();
-        int month = Integer.parseInt(date.substring(0, 2));
-        int year = Integer.parseInt(date.substring(3));
-        System.out.println("Name: " + worker.getName());
-        System.out.println("Department: " + worker.getDepartment().getName());
-        System.out.println("Income for " + date + ": " + "$" + worker.income(year, month));
+        System.out.println(x.getBalance());
+        System.out.println(y.getBalance());
 
     }
 

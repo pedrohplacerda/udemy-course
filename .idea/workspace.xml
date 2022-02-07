@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="26035604-3e1a-42ae-82f0-db6ef1a082fa" name="Changes" comment="Working with enums studies" />
+    <list default="true" id="26035604-3e1a-42ae-82f0-db6ef1a082fa" name="Changes" comment="Working with enums studies">
+      <change afterPath="$PROJECT_DIR$/src/application/entities/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/application/entities/BusinessAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/application/entities/SavingsAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Program.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/entities/Department.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/entities/HourContract.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/entities/Order.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/entities/Worker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/entities/enums/WorkerLevel.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,6 +39,14 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="recentNewPullRequestHead">
+      <RepoCoordinatesHolder>
+        <option name="owner" value="pedrohplacerda" />
+        <option name="repository" value="udemy-course" />
+      </RepoCoordinatesHolder>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -43,6 +62,9 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
