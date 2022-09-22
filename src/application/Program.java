@@ -8,20 +8,15 @@ public class Program {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Enteder a folder path: ");
+        System.out.println("Enter a file path: ");
         String strPath = scanner.nextLine();
 
         File path = new File(strPath);
-        File[] folders = path.listFiles(File::isDirectory);
-        System.out.println("FOLDERS: ");
 
-        assert folders != null;
-        for (File folder : folders) {
-            System.out.println(folder);
-        }
+        System.out.println("getName: " + path.getName());
+        System.out.println("getParent: " + path.getParent());
+        System.out.println("getPath: " + path.getPath());
 
-        boolean success = new File(strPath + "\\subdir").mkdir();
-        System.out.println(success);
 
 
     }
